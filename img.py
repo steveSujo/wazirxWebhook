@@ -35,8 +35,7 @@ def responseImg(rates):
     colors = (245, 239, 237)
     marginTop = 100
 
-    draw.text((50, marginTop), iconsList, font=HackNF, fill=(
-        250, 159, 66), align='left')  # for the  coin Icon in the First Row
+    draw.text((50, marginTop), iconsList, font=HackNF, fill=(250, 159, 66), align='left')  # for the  coin Icon in the First Row
 
 
 # * imported from parse.py
@@ -57,9 +56,11 @@ def responseImg(rates):
 
         perChangeList = perChangeList + perChange + "\n"
 
-    draw.multiline_text((100, 100), nameList, font=HackNF,fill=colors, align='left', spacing=25)
-    draw.multiline_text((360, 100), lastPriceList, font=HackNF,fill=colors, align='left', spacing=25)
-    draw.multiline_text((620, 100), up_DownList, font=HackNF,fill=colors, align='left', spacing=25)
-    draw.multiline_text((870, 100), perChangeList, font=HackNF,fill=colors, align='left', spacing=25)
+    draw.multiline_text((100,100),nameList,font=HackNF,fill=colors,align='left',spacing=25)
+    draw.multiline_text((360,100),lastPriceList,font=HackNF,fill=colors,align='left',spacing=25)
+    draw.multiline_text((620,100),up_DownList,font=HackNF,fill=colors,align='left',spacing=25)
+    draw.multiline_text((870,100),perChangeList,font=HackNF,fill=colors,align='left',spacing=25)
 
     img.save("picture.png")
+
+
